@@ -1,7 +1,10 @@
+/* #region All */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+  margin: 0;
+  border: none;
 }
 
 a {
@@ -11,6 +14,23 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .all-titles {
@@ -49,11 +69,25 @@ ul {
   color: #4d5ae5;
 }
 
-/*Header*/
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* #endregion All */
+/* #region Header */
+
 .header {
 }
 
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .menu {
+  display: flex;
+  gap: 76px;
 }
 
 .logo-header {
@@ -66,6 +100,8 @@ ul {
   color: #2e2f42;
 }
 .menu-list {
+  display: flex;
+  gap: 40px;
 }
 
 .menu-item {
@@ -92,9 +128,12 @@ ul {
 }
 .address {
   font-style: normal;
+  display: flex;
 }
 
 .address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .address-item {
@@ -114,13 +153,22 @@ ul {
 .address-link:focus {
   color: #404bbf;
 }
-/*===main===*/
+/* #endregion Header */
+
+/* #region main */
 .main {
 }
 
-/*===section 'hero'===*/
+/* #region section 'hero' */
 .hero {
   background: #2e2f42;
+  height: 600px;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .hero-title {
@@ -130,9 +178,14 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin: 180px auto 48px;
+  max-width: 496px;
 }
 .hero-btn {
+  display: flex;
+
   font-family: "Roboto", sans-serif;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
@@ -140,6 +193,12 @@ ul {
   letter-spacing: 0.04em;
   color: #fff;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  max-width: 169px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-btn:hover {
@@ -149,6 +208,7 @@ ul {
 .hero-btn:focus {
   background: #404bbf;
 }
+/* #endregion section 'hero' */
 
 /*===section 'About'===*/
 .about {
@@ -211,6 +271,8 @@ ul {
 
 .portfolio-text {
 }
+
+/* #endregion main */
 
 /*===footer===*/
 .footer {
