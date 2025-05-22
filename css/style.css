@@ -5,6 +5,9 @@ body {
   background-color: #ffffff;
   margin: 0;
   border: none;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -14,6 +17,7 @@ a {
 
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 h1,
@@ -70,24 +74,34 @@ img {
 }
 
 .container {
+  display: flex;
   max-width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 /* #endregion All */
+
 /* #region Header */
 
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header .container {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .menu {
   display: flex;
   gap: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo-header {
@@ -157,6 +171,7 @@ img {
 
 /* #region main */
 .main {
+  flex-grow: 1;
 }
 
 /* #region section 'hero' */
@@ -166,9 +181,8 @@ img {
 }
 
 .hero .container {
-  display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
@@ -178,12 +192,12 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin: 180px auto 48px;
+  margin-bottom: 48px;
+  padding-top: 60px;
   max-width: 496px;
 }
 .hero-btn {
   display: flex;
-
   font-family: "Roboto", sans-serif;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
@@ -194,11 +208,12 @@ img {
   color: #fff;
   cursor: pointer;
   border-radius: 4px;
-  padding: 16px 32px;
+  padding: 16px;
   max-width: 169px;
-  height: 56px;
+  max-height: 56px;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .hero-btn:hover {
@@ -210,36 +225,83 @@ img {
 }
 /* #endregion section 'hero' */
 
-/*===section 'About'===*/
+/* #region section 'About' */
 .about {
 }
+
+.about .container {
+  flex-direction: column;
+}
+
 .about-title {
+  position: absolute; /* Позиціонує елемент абсолютно */
+  width: 1px; /* Зменшує його ширину до мінімуму */
+  height: 1px; /* Зменшує його висоту до мінімуму */
+  margin: -1px; /* Приховує будь-яку рамку навколо елемента */
+  border: 0; /* Забирає рамку, якщо є */
+  padding: 0; /* Забирає падінг, якщо є */
+  white-space: nowrap; /* Гарантує, що текст не переноситься */
+  clip-path: inset(100%); /* Обрізає елемент, щоб він не займав місця */
+  clip: rect(0 0 0 0); /* Старий синтаксис для сумісності */
+  overflow: hidden;
 }
+
 .about-list {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
 }
+
 .about-item {
+  width: calc((100% - 24px * 3) / 4);
 }
 .about-subtitle {
+  margin-bottom: 8px;
 }
 .about-text {
 }
+/* #endregion section 'About' */
 
-/*===section Our Team===*/
+/* #region section Our Team */
 .team {
   background: #f4f4fd;
 }
 
+.team .container {
+  flex-direction: column;
+}
+
 .team-title {
+  margin-bottom: 72px;
 }
 
 .team-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .team-item {
   background: #fff;
+  width: calc((100% - 24px * 3) / 4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0 0 4px 4px;
 }
 
 .team-img {
+  margin-bottom: 32px;
+}
+
+.team-member-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 32px;
 }
 
 .team-subtitle {
@@ -249,34 +311,60 @@ img {
 .team-text {
   text-align: center;
 }
+/* #endregion section Our Team */
 
-/*===section Portfolio===*/
+/* #region section Portfolio===*/
 .portfolio {
 }
 
+.portfolio .container {
+  flex-direction: column;
+}
+
 .portfolio-title {
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
 .portfolio-item {
+  border: 1px solid #e7e9fc;
+  width: calc((100% - 24px * 2) / 3);
 }
 
 .portfolio-img {
+  margin-bottom: 32px;
 }
 
 .portfolio-subtitle {
+  margin-bottom: 8px;
+  padding-left: 16px;
 }
 
 .portfolio-text {
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
+/* #endregion section Portfolio===*/
 
 /* #endregion main */
 
-/*===footer===*/
+/* #region footer */
 .footer {
   background: #2e2f42;
+}
+
+.footer .container {
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  align-items: flex-start;
+  gap: 16px;
 }
 
 .logo-footer {
@@ -291,4 +379,6 @@ img {
 
 .footer-text {
   color: #f4f4fd;
+  width: 264px;
 }
+/* #endregion footer */
