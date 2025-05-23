@@ -174,13 +174,13 @@ img {
 /* #region section 'hero' */
 .hero {
   background: #2e2f42;
+  padding: 188px 0;
 }
 
 .hero .container {
   flex-direction: column;
   align-items: center;
   gap: 48px;
-  padding: 188px 0;
 }
 
 .hero-title {
@@ -372,8 +372,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: inline-block;
   margin-bottom: 16px;
+}
+
+a.logo-footer {
+  display: inline-block;
 }
 
 .logo-footer span {
