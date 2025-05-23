@@ -359,12 +359,12 @@ img {
   padding: 100px 0;
 }
 
-.footer-container {
+.footer .container {
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .logo-footer {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -373,10 +373,6 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-bottom: 16px;
-}
-
-a.logo-footer {
-  display: inline-block;
 }
 
 .logo-footer span {
