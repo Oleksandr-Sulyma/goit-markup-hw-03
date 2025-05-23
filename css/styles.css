@@ -102,9 +102,10 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  display: inline-block;
 }
 
-.logo-header-span {
+.logo-header span {
   color: #2e2f42;
 }
 .menu-list {
@@ -375,13 +376,7 @@ img {
   margin-bottom: 16px;
 }
 
-.logo-footer-span {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.logo-footer span {
   color: #f4f4fd;
 }
 
