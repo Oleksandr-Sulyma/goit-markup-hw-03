@@ -362,8 +362,6 @@ img {
 }
 
 .footer .container {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start; /* ← ВИРІВНЮЄ по лівому краю */
 }
 
