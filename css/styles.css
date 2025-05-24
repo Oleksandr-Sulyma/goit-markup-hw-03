@@ -116,10 +116,11 @@ img {
   gap: 40px;
 }
 
-.menu-item {
-}
+/* .menu-item {
+} */
 
 .menu-link {
+  display: block;
   padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
@@ -128,10 +129,7 @@ img {
   color: #2e2f42;
 }
 
-.menu-link:hover {
-  color: #404bbf;
-}
-
+.menu-link:hover,
 .menu-link:focus {
   color: #404bbf;
 }
@@ -198,6 +196,7 @@ img {
 }
 .hero-btn {
   display: block;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
@@ -211,16 +210,12 @@ img {
   padding: 16px 32px;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   min-width: 169px;
   height: 56px;
   border: none;
 }
 
-.hero-btn:hover {
-  background: #404bbf;
-}
-
+.hero-btn:hover,
 .hero-btn:focus {
   background: #404bbf;
 }
@@ -236,15 +231,15 @@ img {
 }
 
 .about-title {
-  position: absolute; /* Позиціонує елемент абсолютно */
-  width: 1px; /* Зменшує його ширину до мінімуму */
-  height: 1px; /* Зменшує його висоту до мінімуму */
-  margin: -1px; /* Приховує будь-яку рамку навколо елемента */
-  border: 0; /* Забирає рамку, якщо є */
-  padding: 0; /* Забирає падінг, якщо є */
-  white-space: nowrap; /* Гарантує, що текст не переноситься */
-  clip-path: inset(100%); /* Обрізає елемент, щоб він не займав місця */
-  clip: rect(0 0 0 0); /* Старий синтаксис для сумісності */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -260,8 +255,8 @@ img {
 .about-subtitle {
   margin-bottom: 8px;
 }
-.about-text {
-}
+/* .about-text {
+} */
 /* #endregion section 'About' */
 
 /* #region section Our Team */
@@ -294,8 +289,8 @@ img {
   border-radius: 0 0 4px 4px;
 }
 
-.team-img {
-}
+/* .team-img {
+} */
 
 .team-member-info {
   display: flex;
@@ -316,8 +311,8 @@ img {
 /* #endregion section Our Team */
 
 /* #region section Portfolio===*/
-.portfolio {
-}
+/* .portfolio {
+} */
 
 .portfolio-container {
   display: flex;
@@ -339,8 +334,8 @@ img {
   width: calc((100% - 24px * 2) / 3);
 }
 
-.portfolio-img {
-}
+/* .portfolio-img {
+} */
 
 .portfolio-info {
   display: flex;
@@ -366,7 +361,13 @@ img {
   padding: 100px 0;
 }
 
-.footer .container a {
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* ← ВИРІВНЮЄ по лівому краю */
+}
+
+.footer .logo {
   margin-bottom: 16px;
 }
 
