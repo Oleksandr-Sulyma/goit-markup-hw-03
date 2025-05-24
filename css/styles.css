@@ -97,17 +97,19 @@ img {
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  align-items: center;
 }
 
-.menu .logo span {
+.menu .logo {
   margin-right: 76px;
+}
+.menu .logo span {
   color: #2e2f42;
 }
 .menu-list {
@@ -117,13 +119,13 @@ img {
 
 .menu-item {
 }
+
 .menu-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding: 24px 0;
 }
 
 .menu-link:hover {
@@ -138,10 +140,9 @@ img {
   color: #404bbf;
   text-decoration-line: underline;
 }
+
 .address {
   font-style: normal;
-  display: flex;
-  align-items: center;
 }
 
 .address-list {
@@ -365,11 +366,11 @@ img {
   padding: 100px 0;
 }
 
-.container a {
+.footer .container a {
   margin-bottom: 16px;
 }
 
-.logo span {
+.footer .logo span {
   color: #f4f4fd;
 }
 
