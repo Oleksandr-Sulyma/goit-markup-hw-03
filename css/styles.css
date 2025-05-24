@@ -117,10 +117,10 @@ img {
 }
 
 .menu-item {
-  padding: 24px 0;
 }
 
 .menu-link {
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
