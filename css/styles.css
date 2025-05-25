@@ -3,7 +3,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
-  margin: 0;
   border: none;
   min-height: 100vh;
   display: flex;
@@ -179,8 +178,6 @@ img {
 }
 
 .hero-container {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -192,7 +189,7 @@ img {
   text-align: center;
   color: #fff;
   max-width: 496px;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
 }
 .hero-btn {
   display: block;
@@ -222,13 +219,8 @@ img {
 /* #endregion section 'hero' */
 
 /* #region section 'About' */
-.about {
-}
-
-.about-container {
-  display: flex;
-  flex-direction: column;
-}
+/* .about {
+} */
 
 .about-title {
   position: absolute;
@@ -265,12 +257,7 @@ img {
 }
 
 .team-title {
-  margin-bottom: 72px;
-}
-
-.team-container {
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto 72px;
 }
 
 .team-list {
@@ -293,11 +280,7 @@ img {
 } */
 
 .team-member-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 
 .team-subtitle {
@@ -313,14 +296,8 @@ img {
 /* #region section Portfolio===*/
 /* .portfolio {
 } */
-
-.portfolio-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .portfolio-title {
-  margin-bottom: 72px;
+  margin: 0 auto 72px;
 }
 
 .portfolio-list {
@@ -338,8 +315,6 @@ img {
 } */
 
 .portfolio-info {
-  display: flex;
-  flex-direction: column;
   border: 1px solid #e7e9fc;
   padding: 32px 16px;
   border-top: none;
@@ -349,8 +324,8 @@ img {
   margin-bottom: 8px;
 }
 
-.portfolio-text {
-}
+/* .portfolio-text {
+} */
 /* #endregion section Portfolio===*/
 
 /* #endregion main */
@@ -359,10 +334,6 @@ img {
 .footer {
   background: #2e2f42;
   padding: 100px 0;
-}
-
-.footer .container {
-  align-items: flex-start; /* ← ВИРІВНЮЄ по лівому краю */
 }
 
 .footer .logo {
